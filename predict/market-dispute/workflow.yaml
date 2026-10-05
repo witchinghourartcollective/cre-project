@@ -1,0 +1,25 @@
+staging-settings:
+  user-workflow:
+    workflow-name: "prediction-market-dispute-staging"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.staging.json"
+    secrets-path: ""
+
+production-settings:
+  user-workflow:
+    workflow-name: "prediction-market-dispute-production"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.production.json"
+    secrets-path: ""
+
+# Local Anvil fork target — simulation only (never deploy/broadcast).
+local-fork:
+  user-workflow:
+    workflow-name: "prediction-market-dispute-local-fork"
+    deployment-registry: "private"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.staging.json"
+    secrets-path: ""

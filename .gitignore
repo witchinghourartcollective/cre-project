@@ -1,0 +1,15 @@
+# Secrets: CRE signing keys etc. NEVER commit.
+.env
+.env.*
+*.env
+!.env.example
+*.key
+# Dependencies and build output (reinstallable)
+node_modules/
+out/
+cache/
+broadcast/
+lib/
+dist/
+target/
+.cre/

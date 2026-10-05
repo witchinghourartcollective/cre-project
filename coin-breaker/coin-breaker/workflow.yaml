@@ -1,0 +1,57 @@
+# ==========================================================================
+# CRE WORKFLOW SETTINGS FILE
+# ==========================================================================
+# Workflow-specific settings for CRE CLI targets.
+# Each target defines user-workflow and workflow-artifacts groups.
+# Settings here override CRE Project Settings File values.
+#
+# Example custom target:
+# my-target:
+#   user-workflow:
+#     workflow-name: "MyExampleWorkflow"    # Required: Workflow Registry name
+#   workflow-artifacts:
+#     workflow-path: "./main.ts"            # Path to workflow entry point
+#     config-path: "./config.yaml"          # Path to config file
+#     secrets-path: "../secrets.yaml"       # Path to secrets file (project root by default)
+
+# ==========================================================================
+staging-settings:
+  user-workflow:
+    workflow-name: "coin-breaker-staging"
+    deployment-registry: "private"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.staging.json"
+    secrets-path: ""
+
+
+# ==========================================================================
+production-settings:
+  user-workflow:
+    workflow-name: "coin-breaker-production"
+    deployment-registry: "private"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.production.json"
+    secrets-path: ""
+# ==========================================================================
+# Receiver-free local simulation. Reads Base mainnet, never builds a report or writes.
+# Never use this target for --broadcast, deploy, update, or activate.
+local-simulation:
+  user-workflow:
+    workflow-name: "coin-breaker-local-simulation"
+    deployment-registry: "private"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.local-simulation.json"
+    secrets-path: ""
+
+# Local anvil fork of Base, used by scripts/fork-dump.ts trip tests. Simulation only.
+local-fork:
+  user-workflow:
+    workflow-name: "coin-breaker-local-fork"
+    deployment-registry: "private"
+  workflow-artifacts:
+    workflow-path: "./main.ts"
+    config-path: "./config.local-simulation.json"
+    secrets-path: ""

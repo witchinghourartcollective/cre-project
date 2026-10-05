@@ -1,0 +1,36 @@
+{
+  "mode": "production",
+  "schedule": "0 */5 * * * *",
+  "chainSelectorName": "ethereum-mainnet-base-1",
+  "stateViewAddress": "0xa3c0c9b65bad0b08107aa264b0f3db444b867a71",
+  "lookbackBlocks": "1800",
+  "maxDropBps": 1500,
+  "maxSpikeBps": 3000,
+  "maxLiquidityDropBps": 5000,
+  "coins": [
+    {
+      "symbol": "witchinghour",
+      "address": "0x3514e89c79ccd1bbc32f133f10fd2d760e090964",
+      "poolKey": {
+        "currency0": "0x1111111111166b7fe7bd91427724b487980afc69",
+        "currency1": "0x3514e89c79ccd1bbc32f133f10fd2d760e090964",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "witchinghourmusic",
+      "address": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+      "poolKey": {
+        "currency0": "0x1111111111166b7fe7bd91427724b487980afc69",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    }
+  ],
+  "breakerAddress": "0xBFeDCca4dE6cF908C1cf375D430DaDDc15C9bdca",
+  "gasLimit": "500000"
+}
