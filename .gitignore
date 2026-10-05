@@ -13,3 +13,4 @@ lib/
 dist/
 target/
 .cre/
+.cre_build_tmp.js
