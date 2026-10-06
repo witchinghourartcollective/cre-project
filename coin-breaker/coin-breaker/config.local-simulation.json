@@ -2,18 +2,151 @@
   "mode": "local-simulation",
   "schedule": "0 */5 * * * *",
   "chainSelectorName": "ethereum-mainnet-base-1",
-  "stateViewAddress": "0xa3c0c9b65bad0b08107aa264b0f3db444b867a71",
   "lookbackBlocks": "1800",
   "maxDropBps": 1500,
   "maxSpikeBps": 3000,
   "maxLiquidityDropBps": 5000,
+  "poolManagerAddress": "0x498581fF718922c3f8e6A244956aF099B2652b2b",
+  "multicall3Address": "0xcA11bde05977b3631167028862bE2a173976CA11",
   "coins": [
+    {
+      "symbol": "mirrorizm",
+      "address": "0x9b6195f4e96976663057bb37069df09e54cecd55",
+      "poolKey": {
+        "currency0": "0x1111111111166b7fe7bd91427724b487980afc69",
+        "currency1": "0x9b6195f4e96976663057bb37069df09e54cecd55",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
     {
       "symbol": "witchinghour",
       "address": "0x3514e89c79ccd1bbc32f133f10fd2d760e090964",
       "poolKey": {
         "currency0": "0x1111111111166b7fe7bd91427724b487980afc69",
         "currency1": "0x3514e89c79ccd1bbc32f133f10fd2d760e090964",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "phunkii",
+      "address": "0x81a72ee502304756ef569980eb862260f9e3617c",
+      "poolKey": {
+        "currency0": "0x1111111111166b7fe7bd91427724b487980afc69",
+        "currency1": "0x81a72ee502304756ef569980eb862260f9e3617c",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "phletch",
+      "address": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x1111111111166b7fe7bd91427724b487980afc69",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x8218fa8d7922e22aed3556a09d5a715f16ad5040"
+      }
+    },
+    {
+      "symbol": "ilikeitifyoudo",
+      "address": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+      "poolKey": {
+        "currency0": "0x1111111111166b7fe7bd91427724b487980afc69",
+        "currency1": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x8218fa8d7922e22aed3556a09d5a715f16ad5040"
+      }
+    },
+    {
+      "symbol": "FCKNaGOD",
+      "address": "0x2c435b335061dbac61154b87b46bff9713d7051d",
+      "poolKey": {
+        "currency0": "0x2c435b335061dbac61154b87b46bff9713d7051d",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "SGNL369",
+      "address": "0x3e4dd72a5120116ef7299c31540ebd1a78a98d45",
+      "poolKey": {
+        "currency0": "0x3e4dd72a5120116ef7299c31540ebd1a78a98d45",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "WHM",
+      "address": "0xcb9f8d97056c2a5b9a7c1f9b3dd16df26447e633",
+      "poolKey": {
+        "currency0": "0xcb9f8d97056c2a5b9a7c1f9b3dd16df26447e633",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "WHMFrnZy",
+      "address": "0x2f40b941d643057def6c16dfcf68d92331374c93",
+      "poolKey": {
+        "currency0": "0x2f40b941d643057def6c16dfcf68d92331374c93",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "4 US",
+      "address": "0xcbf4aa45edd325348d46cb3cf8844222ea0162aa",
+      "poolKey": {
+        "currency0": "0xcbf4aa45edd325348d46cb3cf8844222ea0162aa",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "*",
+      "address": "0x4efd97387de4d50cb87d7108feb1f71584f968f2",
+      "poolKey": {
+        "currency0": "0x4efd97387de4d50cb87d7108feb1f71584f968f2",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "just ask",
+      "address": "0x63d710230099eb8387c61c1c8f6ef5a02ce6cebd",
+      "poolKey": {
+        "currency0": "0x63d710230099eb8387c61c1c8f6ef5a02ce6cebd",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
+        "fee": 8388608,
+        "tickSpacing": 200,
+        "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "cosmicearzz",
+      "address": "0x633d49135b3f7a21275095d92063eb617773f886",
+      "poolKey": {
+        "currency0": "0x633d49135b3f7a21275095d92063eb617773f886",
+        "currency1": "0xf2813da8320ae7d5516bb325c6a69151d7a1baa1",
         "fee": 8388608,
         "tickSpacing": 200,
         "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
@@ -28,6 +161,556 @@
         "fee": 8388608,
         "tickSpacing": 200,
         "hooks": "0x0469a4bd3724dc86c9542f4694c976da13c450c0"
+      }
+    },
+    {
+      "symbol": "HOW DO I FEEL??",
+      "address": "0xad9004f201b808ad154879cd6a736b4099c99871",
+      "poolKey": {
+        "currency0": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "currency1": "0xad9004f201b808ad154879cd6a736b4099c99871",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "ACE OF WANDZ",
+      "address": "0xda2a2508a02fe84e0c28227d4561dfef3922017f",
+      "poolKey": {
+        "currency0": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "currency1": "0xda2a2508a02fe84e0c28227d4561dfef3922017f",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "MINUTE MAID LEMONADE",
+      "address": "0x707b9a7cdcaa973319dcbedb67c3649fee09cbce",
+      "poolKey": {
+        "currency0": "0x707b9a7cdcaa973319dcbedb67c3649fee09cbce",
+        "currency1": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "OHM AD",
+      "address": "0x2c2865d08808afafe07a3eaf40568a6fe8d82754",
+      "poolKey": {
+        "currency0": "0x2c2865d08808afafe07a3eaf40568a6fe8d82754",
+        "currency1": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "THATS TRIPPY MANG",
+      "address": "0x19c7cc6e989601e32afea66b292badc2e76d9341",
+      "poolKey": {
+        "currency0": "0x19c7cc6e989601e32afea66b292badc2e76d9341",
+        "currency1": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "MUDRAZ",
+      "address": "0xced91e65d5ba4fd0e456a01bdaf2583c509cae8e",
+      "poolKey": {
+        "currency0": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "currency1": "0xced91e65d5ba4fd0e456a01bdaf2583c509cae8e",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "WitchingHourMusic",
+      "address": "0x65c115000e0bba8cb419aaee2f21466c74c47102",
+      "poolKey": {
+        "currency0": "0x65c115000e0bba8cb419aaee2f21466c74c47102",
+        "currency1": "0x81a72ee502304756ef569980eb862260f9e3617c",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "MAKE ART / THIS TOO SHALL PASS /",
+      "address": "0xfc7e02e42a50a77955945e22d6f1d5cdf6bed4f0",
+      "poolKey": {
+        "currency0": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "currency1": "0xfc7e02e42a50a77955945e22d6f1d5cdf6bed4f0",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "METHOD OF SCIENCE",
+      "address": "0x040c92618a7c012dceb8d5a9519d2524b52989ee",
+      "poolKey": {
+        "currency0": "0x040c92618a7c012dceb8d5a9519d2524b52989ee",
+        "currency1": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "FUXK AROUND - RIPPARACHIE X LORD",
+      "address": "0x94f7a0829ac068ba46680c6a761fb41be7c05134",
+      "poolKey": {
+        "currency0": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "currency1": "0x94f7a0829ac068ba46680c6a761fb41be7c05134",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "DBMR",
+      "address": "0x9a3fb5458f07bd58152f76773f1387c9144b233d",
+      "poolKey": {
+        "currency0": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "currency1": "0x9a3fb5458f07bd58152f76773f1387c9144b233d",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "ANCESTORZ",
+      "address": "0x69dbfc944fff7c68da1d24fe0c6514355a832585",
+      "poolKey": {
+        "currency0": "0x69dbfc944fff7c68da1d24fe0c6514355a832585",
+        "currency1": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "CLEANSING THE SPACE 💨",
+      "address": "0x8d86532cf6fca98c266008537939e3e92dfba7d8",
+      "poolKey": {
+        "currency0": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "currency1": "0x8d86532cf6fca98c266008537939e3e92dfba7d8",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "TORN BETWEEN HAVING A CONSCIENCE",
+      "address": "0x447a50db5c421dabe6db5a16be8b5e45a9bd6143",
+      "poolKey": {
+        "currency0": "0x447a50db5c421dabe6db5a16be8b5e45a9bd6143",
+        "currency1": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "RITUALZ (RICH JEWELS]",
+      "address": "0x22e61a7776c16cb614f9f5126f46f55bba2ce713",
+      "poolKey": {
+        "currency0": "0x22e61a7776c16cb614f9f5126f46f55bba2ce713",
+        "currency1": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "$PHLETCH ON @ZORA.FARCASTER.ETH",
+      "address": "0x8bfa5db76a3794a5441ec5aa612261248f9e10b1",
+      "poolKey": {
+        "currency0": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "currency1": "0x8bfa5db76a3794a5441ec5aa612261248f9e10b1",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "fuxkaround",
+      "address": "0xb5bc969e8fe63ad35dd5bd04ca5b2c8bdee0f097",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0xb5bc969e8fe63ad35dd5bd04ca5b2c8bdee0f097",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "TESTING 1.2!",
+      "address": "0x5fbe32fc64554af7a4593f2587b5812dc3e900f0",
+      "poolKey": {
+        "currency0": "0x5fbe32fc64554af7a4593f2587b5812dc3e900f0",
+        "currency1": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "Powpow",
+      "address": "0x37b865569450bbf7522939ee3d6857e7b63f2b32",
+      "poolKey": {
+        "currency0": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+        "currency1": "0x37b865569450bbf7522939ee3d6857e7b63f2b32",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "Suppy",
+      "address": "0xe0b8d413078fff1039039687910d2e89d782f17a",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0xe0b8d413078fff1039039687910d2e89d782f17a",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "Windoze",
+      "address": "0x9bc8a2858fabc2573437faee6e0fc0d14f2b3008",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x9bc8a2858fabc2573437faee6e0fc0d14f2b3008",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "Poo",
+      "address": "0x44fc0e38d8de31b1e3402b61d8425cfee8a2efc4",
+      "poolKey": {
+        "currency0": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+        "currency1": "0x44fc0e38d8de31b1e3402b61d8425cfee8a2efc4",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "Die bout it",
+      "address": "0xd116549401691d178979463a54c84b21c877ca1a",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0xd116549401691d178979463a54c84b21c877ca1a",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "Shdwrk",
+      "address": "0xd5b44ec181f0a7664794e38850e5b66044916e7d",
+      "poolKey": {
+        "currency0": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+        "currency1": "0xd5b44ec181f0a7664794e38850e5b66044916e7d",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "Hike",
+      "address": "0x848143bbc865daa865ed580432ca6c22ba2453d7",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x848143bbc865daa865ed580432ca6c22ba2453d7",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "boutthat",
+      "address": "0x4a1ba57ae781425d69d225a206144d23bbd3d177",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x4a1ba57ae781425d69d225a206144d23bbd3d177",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "actAfool",
+      "address": "0x3badaeac02ad66a2aa364b4b11dcd530949a4cb0",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x3badaeac02ad66a2aa364b4b11dcd530949a4cb0",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "GLDNSHWRZ",
+      "address": "0x08ebde9a4242eac3ff735ac9c8955bf784a8a9f2",
+      "poolKey": {
+        "currency0": "0x08ebde9a4242eac3ff735ac9c8955bf784a8a9f2",
+        "currency1": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "rehab",
+      "address": "0x7ff5955ffcd62f6766a58f7c1007dd18d4fbc560",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x7ff5955ffcd62f6766a58f7c1007dd18d4fbc560",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "home",
+      "address": "0xb36aceb8d459205e00bdb8897e9d605bf9325764",
+      "poolKey": {
+        "currency0": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+        "currency1": "0xb36aceb8d459205e00bdb8897e9d605bf9325764",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "Mking gangstz",
+      "address": "0x364522660ebcf29205dc9a32a365f06a38d3131f",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x364522660ebcf29205dc9a32a365f06a38d3131f",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "sigilz",
+      "address": "0x60ab1848d5b4317069ac3f0d617b67fb33d7ea66",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x60ab1848d5b4317069ac3f0d617b67fb33d7ea66",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xc8d077444625eb300a427a6dfb2b1dbf9b159040"
+      }
+    },
+    {
+      "symbol": "muerte",
+      "address": "0x953e70f8e7b9f249d1993e329272b8bebc501a8c",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x953e70f8e7b9f249d1993e329272b8bebc501a8c",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "cuwicu",
+      "address": "0x640365f6f499e5fdef17de5269e582416846b894",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x640365f6f499e5fdef17de5269e582416846b894",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "shplash",
+      "address": "0x8c4c3a99000a6ceb4283deaea562992e22a43591",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x8c4c3a99000a6ceb4283deaea562992e22a43591",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "mntny",
+      "address": "0xaf0bde17ddf99a99e4a151747bb8b255c2951848",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0xaf0bde17ddf99a99e4a151747bb8b255c2951848",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "🖕",
+      "address": "0x390a7d1fac3c030de7ae12d2b53b00e08cd32378",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x390a7d1fac3c030de7ae12d2b53b00e08cd32378",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "home",
+      "address": "0x370140de3d9a1ffa0c5dfdb1a1cc7f964a691ebf",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x370140de3d9a1ffa0c5dfdb1a1cc7f964a691ebf",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "PsyxY",
+      "address": "0x9513d4b2182c80ab569fdc7d407b598f466eb6cf",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x9513d4b2182c80ab569fdc7d407b598f466eb6cf",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "smile",
+      "address": "0xff3f814aff60a5956266d1a9ef635c2efb535780",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0xff3f814aff60a5956266d1a9ef635c2efb535780",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "RobotFuture",
+      "address": "0x9980263e346f9b1bc93d4aeee58501ce2f92a8eb",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x9980263e346f9b1bc93d4aeee58501ce2f92a8eb",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "Grvyrd",
+      "address": "0x0d7c38052e4e23578a6d7f10f0bb1202a7a7dcb5",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x0d7c38052e4e23578a6d7f10f0bb1202a7a7dcb5",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "DBMR",
+      "address": "0x7eded650cc0bbd115753b537c756e48e62e47121",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x7eded650cc0bbd115753b537c756e48e62e47121",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "HLYXRD",
+      "address": "0xa2762881dd0e9ac2b041a172f46870e7005abc71",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0xa2762881dd0e9ac2b041a172f46870e7005abc71",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "ullCee",
+      "address": "0xc239a0a188a506911f57990a31431ba5cd0bf814",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0xc239a0a188a506911f57990a31431ba5cd0bf814",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0x2b15a16b3ef024005ba899bb51764fcd58cf9040"
+      }
+    },
+    {
+      "symbol": "WHM",
+      "address": "0x35959d471253cc92ef1f2f108f1f10b8494d42e1",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x35959d471253cc92ef1f2f108f1f10b8494d42e1",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xff74be9d3596ea7a33bb4983dd7906fb34135040"
+      }
+    },
+    {
+      "symbol": "GrBSmN",
+      "address": "0xf6a37c3d8f11e91b880dee94a17c9c86d983ac4e",
+      "poolKey": {
+        "currency0": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+        "currency1": "0xf6a37c3d8f11e91b880dee94a17c9c86d983ac4e",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xff74be9d3596ea7a33bb4983dd7906fb34135040"
+      }
+    },
+    {
+      "symbol": "d34d",
+      "address": "0xafce594447578924a6a50513f9319d3df6ebc846",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0xafce594447578924a6a50513f9319d3df6ebc846",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xff74be9d3596ea7a33bb4983dd7906fb34135040"
+      }
+    },
+    {
+      "symbol": "B$$M",
+      "address": "0x45078ec5e63188a9176d72dd930d1b54fa0f1500",
+      "poolKey": {
+        "currency0": "0x0639d6cd2ec2351a7f7f8abf23ed6e494ef85a5e",
+        "currency1": "0x45078ec5e63188a9176d72dd930d1b54fa0f1500",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xff74be9d3596ea7a33bb4983dd7906fb34135040"
+      }
+    },
+    {
+      "symbol": "GMbLn",
+      "address": "0x211e304c502d59676bd637b85220eb8ba599ef4d",
+      "poolKey": {
+        "currency0": "0x211e304c502d59676bd637b85220eb8ba599ef4d",
+        "currency1": "0x2f03fa1b4747ce69b25bd9ae137680a3fe9eaf06",
+        "fee": 10000,
+        "tickSpacing": 200,
+        "hooks": "0xff74be9d3596ea7a33bb4983dd7906fb34135040"
       }
     }
   ]
