@@ -4,7 +4,10 @@
   "main": "dist/main.js",
   "private": true,
   "scripts": {
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "sync-coins": "NODE_PATH=./node_modules bun ../scripts/sync-coins.ts",
+    "sync-coins:check": "NODE_PATH=./node_modules bun ../scripts/sync-coins.ts --check"
   },
   "license": "UNLICENSED",
   "dependencies": {
